@@ -1,0 +1,17 @@
+sudo apt-get install mysql-server
+
+mysql -u root -p
+
+show databases;
+create database test;
+use test;
+
+CREATE TABLE  Events ( EVENT_ID INT UNSIGNED  NOT NULL AUTO_INCREMENT, EVENT_DATE DATE  NOT NULL DEFAULT 0, TITLE CHAR(30)   NOT NULL DEFAULT '',  PRIMARY KEY  (EVENT_ID) );
+
+SELECT * FROM Events;
+
+
+
+https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html_single/#tutorial-firstapp-firstclass
+
+
