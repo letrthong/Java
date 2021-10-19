@@ -26,12 +26,12 @@ public class Bot extends TelegramLongPollingBot {
      * @param s The String that you want to send as a message.
      */
     public synchronized void sendMsg(String chatId, String s) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.enableMarkdown(true);
-        sendMessage.setChatId(chatId);
-        sendMessage.setText(s);
+        SendMessage message = new SendMessage();
+        message.enableMarkdown(true);
+        message.setChatId(chatId);
+        message.setText(s);
         try {
-            sendMessage(sendMessage);
+            sendMessage(message);
         } catch (TelegramApiException e) {
             //log.log(Level.SEVERE, "Exception: ", e.toString());
         }
