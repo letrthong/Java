@@ -13,10 +13,11 @@ public class Bot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         String message = update.getMessage().getText();
+        String chatId = update.getMessage().getChatId().toString();
         if(message.equals("/start")){
-             sendMsg(update.getMessage().getChatId().toString(), "User id=" + update.getMessage().getChatId().toString());
+             sendMsg(chatId, "User id=" + chatId);
         }else{
-            sendMsg(update.getMessage().getChatId().toString(), "Reply from Bot: " + " " + message);
+            sendMsg(chatId, "Reply from Bot: " + " " + message);
         }
     }
 
