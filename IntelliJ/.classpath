@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="blockQueue/src"/>
+	<classpathentry kind="src" path="Thread/src"/>
+	<classpathentry kind="src" path="twilio/src/main/java"/>
+	<classpathentry kind="src" path="untitled/src/main/java"/>
+	<classpathentry kind="lib" path="untitled/target/untitled-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="untitled/target/classes"/>
+</classpath>
